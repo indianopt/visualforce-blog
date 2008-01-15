@@ -10,4 +10,8 @@
         <revokeDelete>true</revokeDelete>
         <revokeEdit>true</revokeEdit>
     </objectPermissions>
+    <tabVisibilities>
+        <tab>Blog</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
 </Profile>
