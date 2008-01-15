@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Post__c</fullName>
+        <label>Post</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>12</visibleLines>
+    </fields>
+    <label>Blog Post</label>
+    <nameField>
+        <label>Blog Post Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Blog Posts</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
