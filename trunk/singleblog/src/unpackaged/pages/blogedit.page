@@ -28,13 +28,13 @@
 <script type="text/javascript" >
 var myEditor;
 window.onload = function init()  { 
- myEditor = new YAHOO.widget.Editor('{!$component.msgpost}', {
+ myEditor = new YAHOO.widget.Editor('{!$Component.msgpost}', {
     height: '400px', width: '722px',  dompath: true,   animate: true });
  myEditor.render();
  document.getElementById('editor').style.display=''; 
 }
 function beforeTextSave() {
-   document.getElementById('{!$component.msgpost}').value = myEditor.getEditorHTML();
+   document.getElementById('{!$Component.msgpost}').value = myEditor.getEditorHTML();
 }
 
 </script>
