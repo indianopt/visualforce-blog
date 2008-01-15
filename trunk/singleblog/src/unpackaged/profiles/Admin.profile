@@ -8,6 +8,10 @@
         <object>Blog_Post__c</object>
     </objectPermissions>
     <tabVisibilities>
+        <tab>Blog</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Blog_Post__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
