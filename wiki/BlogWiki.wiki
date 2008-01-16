@@ -1,4 +1,4 @@
-#Building a Blogging Application Using Visualforce
+Building a Blogging Application Using Visualforce
 
 = Introduction =
 
