@@ -1,13 +1,10 @@
-#Simple Blog application using Visualforce.
+#Building a Blogging Application Using Visualforce
 
 = Introduction =
 
-Add your content here.
+This sample demonstrates how to create a simple blog application. It shows several interesting uses of Visualforce, including rich text widget from Yahoo, onload events in the page, custom controller, onclick and action complete handlers, one in javascript and the other inside a custom controler.
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * http://wiki.apexdevnet.com/index.php/Apex_Wiki 
+Please refer to this wiki entry for details: http://wiki.apexdevnet.com/index.php/Building_a_Blogging_Application_Using_Visualforce
