@@ -15,21 +15,33 @@
 <!-- Source file for Rich Text Editor-->
 <script src="http://yui.yahooapis.com/2.3.0/build/editor/editor-beta-min.js"></script>
 
-<div  class="yui-skin-sam" style="display:none" id="editor" align="center" ><p />
-<h2>Blog Title: </h2>
-<apex:inputField  value="{!Blog_Post__c.Name}"/>&nbsp;
+<table width=100% border=0 cellpadding=5>
+<tr>
+<td><h2>Post Title: </h2> <apex:inputText  value="{!Blog_Post__c.Name}" size="80" style="width:100%"/>&nbsp;</td>
+<td><p />
+
+
+
+<p />
+</td>
+</tr>
+<tr>
+<td colspan=2>
+<div  class="yui-skin-sam" style="display:none" id="editor" align="center">
+<apex:inputtextarea id="msgpost" cols="500" rows="50" value="{!Blog_Post__c.Post__c}"/>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan=2 align=right>
 <apex:commandButton value="Save" action="{!Save}" 
         onClick="beforeTextSave()"  
         oncomplete="window.parent.location.href='/apex/blog';"/>
-<p />
-<apex:inputtextarea id="msgpost" cols="500" rows="50" value="{!Blog_Post__c.Post__c}"/>
-</div>
-
 <script type="text/javascript" >
 var myEditor;
 window.onload = function init()  { 
  myEditor = new YAHOO.widget.Editor('{!$Component.msgpost}', {
-    height: '400px', width: '722px',  dompath: true,   animate: true });
+    height: '400px', width: '100%',  dompath: true,   animate: true });
  myEditor.render();
  document.getElementById('editor').style.display=''; 
 }
@@ -38,7 +50,8 @@ function beforeTextSave() {
 }
 
 </script>
-
+</td>
+</tr>
 
 </apex:form>
 </apex:page>
