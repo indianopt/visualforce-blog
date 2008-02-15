@@ -29,7 +29,7 @@ input.groovybutton { font-size:12px;
 </apex:commandLink></h2>
 </apex:form>
 <br/>
-{!post.Post__c}<p class="sub">
+<apex:outputText escape="false" value="{!post.Post__c}"/><p class="sub">
 Posted by {!post.CreatedBy.Name} on {!post.CreatedDate}</p>
 </apex:repeat>
 <center>
